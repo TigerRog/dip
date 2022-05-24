@@ -1,0 +1,61 @@
+section {
+	text-align: center
+}
+
+section .service {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    margin: 5px;
+    margin-top: 20px;
+    width: 23%;
+    display: inline-block;
+	vertical-align:top;
+}
+
+section .service:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section .service img {
+	margin: 3%;
+    width: 94%;
+}
+
+section .service img:hover {
+    /*
+    Animation
+    */
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    
+	opacity: 0.7;
+}
+
+section .service p {
+	margin: 0px 20px 20px 20px;
+    font-size: 1em;
+}
+
+section .service hr{
+	background-color: #8D3131;
+	height: 2px;
+}
+
+@media screen and (max-width: 1050px) {
+    section .service {
+        width: 45%;
+    }
+}
+
+
+
+@media screen and (max-width: 760px) {
+    section .service {
+        width: 98%;
+        min-width: auto;
+        max-width: auto;
+    }
+}

@@ -1,0 +1,170 @@
+/*
+SEARCH BOX
+*/
+
+section input[type="search"] {
+    width: 50%;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 2px solid white;
+    background-color: white;
+    background-image: url(http://www.w3schools.com/howto/searchicon.png);
+    background-position: 95% 6px; /* position of icon */
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 20px; /*position of text */
+    box-shadow: none;
+    display: inline-block;
+}
+
+section input[type="search"]:focus {
+    border: 2px solid #8D3131;
+    outline: none;
+}
+
+section form{
+    text-align: center;
+    margin-left: auto;
+    margin right: auto;
+    margin-top: 10px;
+}
+
+/*
+CARDS
+*/
+
+section {
+    text-align: center;
+}
+
+section .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    margin: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 23%;
+    vertical-align:top;
+}
+
+section .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section .container {
+    padding: 2px 16px;
+}
+
+section img{
+    margin: 3%;
+    width: 94%;
+}
+
+
+/*
+POP-UP IMAGES
+*/
+
+section .myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .myImg:hover {opacity: 0.7;}
+
+
+section .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(56, 19, 19, 0.9);
+}
+
+/*Image*/
+section .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/*Text*/
+section .caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #FFF;
+    padding: 10px 0;
+    height: 150px;
+    font-family: 'Bazar', sans-serif;
+    text-align: center;
+    text-shadow: 1px 2px #000;
+}
+
+section .modal-content, section .caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+section .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+section .close:hover,
+section .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*
+TABLET
+*/
+
+@media screen and (max-width: 1050px) {
+    section .card {
+        width: 45%;
+    }
+
+    section .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 760px) {
+    section .card {
+        width: 98%;
+        min-width: auto;
+        max-width: auto;
+    }
+}

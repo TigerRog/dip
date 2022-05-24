@@ -1,0 +1,105 @@
+form {
+    padding: 0 7%;
+    text-align: center;
+    display: block;
+}
+
+form * {
+    box-sizing: content-box
+}
+
+form #leftholder, form #rightholder {
+    display: inline-block;
+    width: 45%;
+    /*Fixes 20px offset*/
+    margin-right: 15px;
+    margin-left: -25px;
+}
+
+form #leftholder {
+    float: left;
+}
+
+form #rightholder {
+    float: right;
+}
+
+input, select, textarea {
+    display: block;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid white;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 20px; /*position of text */
+    box-shadow: none;
+    margin: 5px 5px 25px 5px;
+    width: 100%;
+        -ms-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+            box-sizing: content-box;
+    color: #381313;
+} 
+
+input[type="checkbox"], label {
+    width: initial;
+    display: inline-block;
+    margin: 5px 5px 25px 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #8D3131;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #415EF2;
+    outline: none;
+}
+
+form #policy {
+    float: left;
+    vertical-align: middle;
+}
+
+button {
+    vertical-align: middle;
+    float: right;
+    margin-right: -48px;
+    margin-top: -5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    background-color: #415EF2;
+    color: #faf6eb;
+    padding: 8px 20px 8px 20px; /*position of text */
+    box-shadow: none;
+    border: 2px solid #415EF2;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+label{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+TABLET & PHONE
+*/
+@media screen and (max-width: 1050px) {
+    form #leftholder, form #rightholder {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+}

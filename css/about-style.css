@@ -1,0 +1,68 @@
+section .wrapper {
+	display: flex;
+}
+
+section .rightwrapper, section .leftwrapper {
+	margin: 10px;
+	padding: 0;
+	display: inline-block;
+    width: 47%;
+    margin-left: 3%;
+    margin-right: 3%;
+    vertical-align: top;
+}
+
+section .leftwrapper {
+	float: left;
+}
+
+section .leftwrapper p {
+	font-size: 1em;
+}
+
+section .rightwrapper {
+	float: right;
+}
+
+section #map {
+	border: 10px solid white;
+	height: 550px; /*500*/
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+section #map:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* HIDE GOOGLE MAPS TEXT */
+.gmnoprint:not(.gm-bundled-control) {
+    display: none;
+}
+
+.gm-bundled-control .gmnoprint {
+    display: block;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+a[href^="https://www.google.com/maps"]{display:none !important}
+
+/*
+TABLET & PHONE
+*/
+@media screen and (max-width: 1050px) {
+	section .wrapper {
+		display: block;
+	}
+
+    section .leftwrapper, section .rightwrapper {
+        display: block;
+        float: left;
+        width: 94%;
+    }
+
+    section #map {
+		margin-bottom: 40px;
+	}
+
+}
